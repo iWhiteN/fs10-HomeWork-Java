@@ -12,6 +12,16 @@ public class TodoList {
         scedule[0][1] = "do home work";
         scedule[1][0] = "Monday";
         scedule[1][1] = "go to courses; watch a film";
+        scedule[2][0] = "Tuesday";
+        scedule[2][1] = "do smth 1";
+        scedule[3][0] = "Wednesday";
+        scedule[3][1] = "do smth 2";
+        scedule[4][0] = "Thursday";
+        scedule[4][1] = "do smth 3";
+        scedule[5][0] = "Friday";
+        scedule[5][1] = "do smth 4";
+        scedule[6][0] = "Saturday";
+        scedule[6][1] = "do smth 5";
     }
 
     public void start() {
@@ -30,7 +40,7 @@ public class TodoList {
                     valid = true;
                 }
             }
-            if (!valid && !userInput.equals("exit"))
+            if (!valid && !userInput.trim().toLowerCase().equals("exit"))
                 System.out.println("Sorry, I don't understand you, please try again.");
         }
     }
